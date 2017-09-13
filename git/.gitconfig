@@ -1,0 +1,5 @@
+[user]
+	email = eric.douglas.mail@gmail.com
+	name = Eric Douglas
+[core]
+	editor = nvim
