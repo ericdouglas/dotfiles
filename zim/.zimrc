@@ -1,0 +1,42 @@
+# Zim
+zprompt_theme='eriner'
+zcorrection='true'
+ztermtitle='%n@%m:%~'
+zhighlighters=(main brackets cursor)
+zmodules=(directory environment git git-info history input utility meta custom \
+          syntax-highlighting history-substring-search prompt completion autosuggestions)
+
+# Aliases
+alias e="elixir"
+alias ec="elixirc"
+alias mt="mix test"
+alias md="mix docs"
+# change brightness of external monitor
+# ex: xrandr --output HDMI1 --brightness 0.8
+alias emb="xrandr --output HDMI1 --brightness"
+# main monitor brightness
+# ex: xbacklight -set 80
+alias mmb="xbacklight -set"
+# git commands
+alias g="git"
+alias ga="git add"
+alias gaa="git add --all"
+alias gc="git commit -v"
+alias gc!="git commit -v --amend"
+alias gca="git commit -v -a"
+alias gca!="git commit -v -a --amend"
+alias gcb="git checkout -b"
+alias gcm="git checkout master"
+alias gc-="git checkout -"
+alias gco="git checkout"
+alias gd="git diff"
+alias gb="git branch"
+alias gcb="git symbolic-ref --short HEAD" # short name of the current branch
+alias gll="git pull origin"
+alias glog="git log --oneline --decorate --color --graph"
+alias gp="git push"
+alias ggp="git push origin"
+alias gst="git status"
+alias gss="git stash save"
+alias gsp="git stash pop"
+alias gs="git show"
