@@ -97,6 +97,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'SirVer/ultisnips'
+  let g:UltiSnipsExpandTrigger="<tab>"
+  let g:UltiSnipsJumpForwardTrigger="<c-n>"
+  let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 
 Plug 'Raimondi/delimitMate'
 
