@@ -126,7 +126,15 @@ bar {
 bindsym $mod+shift+b exec --no-startup-id i3lock --color "#000000"
 
 # monitor config
-exec_always --no-startup-id xrandr --output HDMI1 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
+set $notebook_monitor xrandr --output HDMI1 --off --output LVDS1 --mode 1366x768 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
+set $external_monitor xrandr --output HDMI1 --primary --mode 2560x1080 --pos 0x0 --rotate normal --output LVDS1 --off --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
+set $dual_monitor xrandr --output HDMI1 --primary --mode 2560x1080 --pos 1366x0 --rotate normal --output LVDS1 --mode 1366x768 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output VGA1 --off
+
+bindsym $mod+m exec --no-startup-id $external_monitor
+bindsym $mod+Shift+m exec --no-startup-id $dual_monitor
+bindsym $mod+Shift+n exec --no-startup-id $notebook_monitor
+
+exec --no-startup-id $external_monitor
 
 hide_edge_borders both
 
@@ -135,9 +143,9 @@ exec_always --no-startup-id nm-applet
 
 # Pulse Audio controls
 # obs: find the sink: pactl list sinks short
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 4 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 4 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 4 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +3% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -3% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 2 toggle # mute sound
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
