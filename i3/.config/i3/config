@@ -172,3 +172,6 @@ bindsym $mod+n exec --no-startup-id nemo
 
 # Gravity Designer
 bindsym $mod+Shift+g exec --no-startup-id ~/Downloads/GravitDesigner.AppImage
+
+# Browser
+bindsym $mod+b exec --no-startup-id google-chrome-stable

@@ -1,4 +1,4 @@
-# Zim
+# zim
 zprompt_theme='eriner'
 zcorrection='true'
 ztermtitle='%n@%m:%~'
@@ -6,7 +6,7 @@ zhighlighters=(main brackets cursor)
 zmodules=(directory environment git git-info history input utility meta custom \
           syntax-highlighting history-substring-search prompt completion autosuggestions)
 
-# Aliases
+# aliases
 alias e="elixir"
 alias ec="elixirc"
 alias mt="mix test"
@@ -40,3 +40,7 @@ alias gst="git status"
 alias gss="git stash save"
 alias gsp="git stash pop"
 alias gs="git show"
+
+# exports
+export VISUAL=nvim
+export EDITOR="$VISUAL"
