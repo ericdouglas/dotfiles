@@ -113,6 +113,7 @@ retab
 set shiftwidth=2
 set relativenumber
 set autoindent
+set smartindent
 set cursorline
 set cursorcolumn
 set autoread
