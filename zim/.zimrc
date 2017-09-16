@@ -44,3 +44,7 @@ alias gs="git show"
 # exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+
+# asdf
+. $HOME/.asdf/asdf.sh
+#. $HOME/.asdf/completions/asdf.bash
