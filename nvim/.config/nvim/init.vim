@@ -98,8 +98,8 @@ Plug 'terryma/vim-multiple-cursors'
 
 Plug 'SirVer/ultisnips'
   let g:UltiSnipsExpandTrigger="<tab>"
-  let g:UltiSnipsJumpForwardTrigger="<c-n>"
-  let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+  let g:UltiSnipsJumpForwardTrigger="<c-j>"
+  let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 Plug 'Raimondi/delimitMate'
 
