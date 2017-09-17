@@ -19,6 +19,8 @@ Plug 'neomake/neomake'
     autocmd! BufWritePost * Neomake
   augroup END
 
+  let g:neomake_javascript_eslint_exe = $PWD .'/node_modules/.bin/eslint'
+
 " jump between files
 Plug 'c-brenn/phoenix.vim'
 Plug 'tpope/vim-projectionist' " required for some navigation features
