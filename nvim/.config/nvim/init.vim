@@ -137,6 +137,9 @@ set t_Co=256
 set showbreak=↪
 " hide -- INSERT -- in the status bar
 set noshowmode
+" show white space
+set listchars=eol:¬,space:·
+set list
 
 " theme
 set background=dark
