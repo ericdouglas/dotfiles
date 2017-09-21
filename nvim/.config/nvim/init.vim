@@ -59,30 +59,8 @@ Plug 'airblade/vim-gitgutter'
 " without any weird color
 highlight clear SignColumn
 
-" Toggle comment bloccks
-Plug 'scrooloose/nerdcommenter'
-
-" vue files have mixed content, so this
-" informs nerdcommenter about that.
-let g:ft = ''
-function! NERDCommenter_before()
-  if &ft == 'vue'
-    let g:ft = 'vue'
-    let stack = synstack(line('.'), col('.'))
-    if len(stack) > 0
-      let syn = synIDattr((stack)[0], 'name')
-      if len(syn) > 0
-        exe 'setf ' . substitute(tolower(syn), '^vue_', '', '')
-      endif
-    endif
-  endif
-endfunction
-function! NERDCommenter_after()
-  if g:ft == 'vue'
-    setf vue
-    let g:ft = ''
-  endif
-endfunction
+" Toggle comment blocks
+Plug 'tpope/vim-commentary'
 
 " resize windows easily
 Plug 'jimsei/winresizer'
@@ -108,11 +86,10 @@ Plug 'Raimondi/delimitMate'
 call plug#end()
 
 set tabstop=2
-set softtabstop=2
-set expandtab
-retab
-" indent by 2 spaces by default
 set shiftwidth=2
+set expandtab
+set softtabstop=2
+retab
 set relativenumber
 set autoindent
 set smartindent
@@ -191,4 +168,3 @@ vnoremap <leader>p "+p
 autocmd FileType markdown setlocal spell spelllang=en_us
 autocmd BufNewFile,BufRead COMMIT_EDITMSG setlocal spell spelllang=en_us
 autocmd BufNewFile,BufRead *.md,*.mkd,*.markdown set spell spelllang=en_us
-
