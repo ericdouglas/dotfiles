@@ -47,7 +47,7 @@ alias ggp="git push origin"
 alias gst="git status"
 alias gss="git stash save"
 alias gsp="git stash pop"
-alias gs="git show"
+alias gsh="git show"
 
 ##### exports
 export VISUAL=nvim
