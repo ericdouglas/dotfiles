@@ -23,7 +23,7 @@ alias mmb="xbacklight -set"
 # xclip
 alias xc="xclip -selection clipboard"
 # get print working directory
-# usage on terminal: ctrl+shift+v <enter> - go to such directory
+# usage on terminal: ctrl+shift+insert <enter> - go to such directory
 alias ged="pwd | xc"
 
 # git commands
