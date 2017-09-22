@@ -1,4 +1,4 @@
-# zim
+##### zim
 zprompt_theme='eriner'
 zcorrection='true'
 ztermtitle='%n@%m:%~'
@@ -6,17 +6,23 @@ zhighlighters=(main brackets cursor)
 zmodules=(directory environment git git-info history input utility meta custom \
           syntax-highlighting history-substring-search prompt completion autosuggestions)
 
-# aliases
+##### aliases
+# elixir
 alias e="elixir"
 alias ec="elixirc"
 alias mt="mix test"
 alias md="mix docs"
+
 # change brightness of external monitor
 # ex: xrandr --output HDMI1 --brightness 0.8
 alias emb="xrandr --output HDMI1 --brightness"
 # main monitor brightness
 # ex: xbacklight -set 80
 alias mmb="xbacklight -set"
+
+# xclip
+alias xc="xclip -selection c"
+
 # git commands
 alias g="git"
 alias ga="git add"
@@ -41,10 +47,8 @@ alias gss="git stash save"
 alias gsp="git stash pop"
 alias gs="git show"
 
-# exports
+##### exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-
-# asdf
-. $HOME/.asdf/asdf.sh
-#. $HOME/.asdf/completions/asdf.bash
+export PATH="$HOME/.cargo/bin:$PATH" # rust
+. $HOME/.asdf/asdf.sh # asdf
