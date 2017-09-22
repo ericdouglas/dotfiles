@@ -21,8 +21,9 @@ alias emb="xrandr --output HDMI1 --brightness"
 alias mmb="xbacklight -set"
 
 # xclip
-alias xc="xclip -selection c"
-alias gpwd="pwd | xc"
+alias xc="xclip -selection clipboard"
+alias ged="pwd | xc" # get print working directory
+alias god="cd $(xclip -o -selection clipboard)" # go to directory
 
 # git commands
 alias g="git"
