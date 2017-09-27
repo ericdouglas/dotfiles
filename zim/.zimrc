@@ -11,6 +11,7 @@ zmodules=(directory environment git git-info history input utility meta custom \
 alias e="elixir"
 alias ec="elixirc"
 alias mt="mix test"
+alias mtw="mix test.watch"
 alias md="mix docs"
 
 # change brightness of external monitor
@@ -49,6 +50,9 @@ alias gst="git status"
 alias gss="git stash save"
 alias gsp="git stash pop"
 alias gsh="git show"
+
+# Convert video to audio from youtube
+alias dv="youtube-dl -x --audio-format mp3"
 
 ##### exports
 export VISUAL=nvim
