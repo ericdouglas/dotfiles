@@ -54,6 +54,9 @@ alias gsh="git show"
 # Convert video to audio from youtube
 alias dv="youtube-dl -x --audio-format mp3"
 
+# open pdf - e.g: op ~/path/to/file &
+alias op="evince"
+
 ##### exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
