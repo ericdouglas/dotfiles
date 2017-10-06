@@ -83,6 +83,8 @@ Plug 'SirVer/ultisnips'
 
 Plug 'Raimondi/delimitMate'
 
+Plug 'ap/vim-css-color'
+
 call plug#end()
 
 set tabstop=2
